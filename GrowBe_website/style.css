@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    padding: 40px 0;
+}
+
+.header-content {
+    padding: 49px 0 162px;
+}
+
+.title {
+    margin-bottom: 17px;
+}
+
+.header-buttons {
+    margin-top: 37px;
+}
+
+.header-logos {
+    padding: 96px 0;
+}
