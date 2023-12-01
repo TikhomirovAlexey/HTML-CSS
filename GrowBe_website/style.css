@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -25,23 +25,33 @@ a {
 }
 
 .nav {
-    width: 45%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .link {
     color: #000;
     font-size: 14px;
+    transition: all 0.5s;
+    font-weight: 500;
 }
 
-.link:hover {
+.link:hover:not(.link-red) {
     color: #F25822;
+}
+
+.link-red {
+    padding: 12px 27px;
+    border-radius: 30px;
+    background: #F25822;
+    color: #fff;
 }
 
 .top-content {
     padding-top: 49px;
-    padding-bottom: 162px;
+    padding-bottom: 103px;
     display: flex;
     gap: 41px;
 }
@@ -50,19 +60,44 @@ a {
     margin-bottom: 17px;
     color: #000;
     font-size: 60px;
+    font-weight: 700;
+}
+
+.border-red {
+    border-radius: 50%;
+    padding: 0 15px;
+    border: 1px solid #F25822;
 }
 
 .text {
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.text-top {
     color: #888;
     font-size: 20px;
     font-weight: 400;
-    width: 466px;
+}
+
+.text-margin {
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.text-why-us {
+    width: 682px;
+    text-align: center;
+    margin-top: 19px;
+    margin-bottom: 55px;
 }
 
 .top-buttons {
     margin-top: 37px;
     display: flex;
-    gap: 36px;
+    gap: 12px;
 }
 
 .button {
@@ -70,14 +105,34 @@ a {
     font-size: 15px;
     padding: 15px 36px;
     border-radius: 50px;
-    color: #AAA;
-    background: transparent;
-}
-
-.button:hover {
+    color: #fff;
     background: #F25822;
     box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
-    color: #fff;
+    font-weight: 600;
+}
+
+.button-grey {
+    background: transparent;
+    box-shadow: none;
+    color: #aaa;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.button-card {
+    background: transparent;
+    border: transparent;
+    color: #000;
+    font-size: 11px;
+    line-height: 16.5px;
+    font-weight: 700;
+}
+
+.button-flex {
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .top-logos {
@@ -85,4 +140,76 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.about-us {
+    background-image: url("img/vector-back-about-us.png");
+    background-size: 150%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.subtitle {
+    color: #000;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.cards {
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.card {
+    width: 370px;
+    padding: 40px 30px 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: start;
+    transition: all 0.5s;
+}
+
+.card-why-us {
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    text-align: center;
+    gap: 0
+}
+
+.card:hover {
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+    z-index: 10;
+}
+
+.card-why-us:hover {
+    box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.10);
+}
+
+.heading {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.why-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 92px;
+}
+
+.card-img-1-margin {
+    margin-bottom: 15px;
+}
+
+.icon-learn-more {
+    margin-top: 3px;
 }
