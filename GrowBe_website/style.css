@@ -11,6 +11,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
@@ -94,6 +98,11 @@ a {
     margin-bottom: 55px;
 }
 
+.text-what-seo {
+    font-size: 15px;
+    line-height: 22px
+}
+
 .top-buttons {
     margin-top: 37px;
     display: flex;
@@ -155,6 +164,7 @@ a {
     color: #000;
     font-size: 45px;
     font-weight: 700;
+    line-height: 60px;
 }
 
 .cards {
@@ -165,13 +175,19 @@ a {
     gap: 30px;
 }
 
+.cards-what-seo {
+    flex-direction: column;
+    margin-top: 70px;
+}
+
 .card {
-    width: 370px;
+    max-width: 370px;
     padding: 40px 30px 25px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 25px;
+    justify-content: center;
     align-items: start;
     transition: all 0.5s;
 }
@@ -182,6 +198,20 @@ a {
     padding-bottom: 50px;
     text-align: center;
     gap: 0
+}
+
+.card-what-seo {
+    align-items: center;
+    flex-direction: row;
+    max-width: 570px;
+    gap: 29px;
+    padding: 17px 30px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .card:hover {
@@ -199,6 +229,11 @@ a {
     font-weight: 700;
 }
 
+.heading-what-seo {
+    font-size: 20px;
+    line-height: 30px;
+}
+
 .why-us {
     display: flex;
     flex-direction: column;
@@ -212,4 +247,71 @@ a {
 
 .icon-learn-more {
     margin-top: 3px;
+}
+
+.what-seo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.what-seo-img {
+    margin-left: -310px;
+}
+
+.what-seo-info {
+    margin-left: -32px;
+    margin-top: 107px;
+}
+
+.items-about-us {
+    padding-bottom: 42px;
+}
+
+.items-about-us-box {
+    padding: 42px 70px;
+    border: 2px solid #EEE;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-numbers {
+    color: #666;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 105px;
+}
+
+.item-description {
+    color: #666;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+}
+
+.circle-orange {
+    background-color: #F3602D;
+}
+
+.circle-green {
+    background-color: #149211;
+}
+
+.circle-yellow {
+    background-color: #FFC700;
 }
